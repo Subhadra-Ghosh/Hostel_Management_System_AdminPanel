@@ -19,7 +19,7 @@ function NavBar() {
             </li>
             
             <li class="nav-item">
-            <Link class="nav-link" to="/Login">Login</Link>
+            <Link class="nav-link" to="/Login">Login(Admin/user)</Link>
               
             </li>
           </ul>

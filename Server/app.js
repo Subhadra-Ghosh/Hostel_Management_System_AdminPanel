@@ -1,6 +1,6 @@
 const express=require('express');
 const app=express();
-const port=8000;
+const port=5000;
 require("dotenv").config()
 
  const userController=require("./controllers/userController")
@@ -8,8 +8,8 @@ require("dotenv").config()
 
 // establishing Database Connection
 const mongoose=require('mongoose');
-const url=process.env.MONGO_URL;
-mongoose.connect(url).then(()=>{
+
+mongoose.connect('mongodb://localhost:27017/Hostel').then(()=>{
     console.log("connection Done")
 }).catch((error)=>{
     console.log("connection failed")

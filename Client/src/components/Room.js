@@ -26,7 +26,7 @@ const SetMethod=(e)=>{
   <>
     <div className='Room'>
       <div class='images'>
-       <img src={pic2} alt="image" width={350} height={200} />
+       <img src={pic2} alt="image" width={300} height={100} />
         </div>
     <h2>Room Number : {data.RoomNumber}</h2>
     <div>
@@ -45,7 +45,7 @@ const SetMethod=(e)=>{
     <p>Room features : {data.roomFeatures}</p>
     </div>
     <div class="d-flex justify-content-center">
-      {data.freerooms>0?<Button variant="contained"   onClick={SetMethod} name="roomNumber" >Book</Button>:<Button disabled>House Full</Button>}
+      {data.freerooms>0?<Button variant="contained"   onClick={SetMethod} name="roomNumber" >Book</Button>:<button >House Full</button>}
     </div>
     </div>
     </> 
